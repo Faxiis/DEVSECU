@@ -10,6 +10,7 @@
     <script>
         tinymce.init({
             selector: '#mytextarea',
+            content_security_policy: "default-src 'self'"
         });
     </script>
 </head>

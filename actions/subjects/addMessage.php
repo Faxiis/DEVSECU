@@ -11,7 +11,7 @@ if (isset($_POST['validate'])) {
         $checkIfSubjectExist->execute(array($idOfSubject));
 
         if ($checkIfSubjectExist->rowCount() > 0) {
-            $message_content = nl2br(htmlspecialchars($_POST['content']));
+            $message_content = $_POST['content'];
             $message_date = date('Y-m-d H:i:s');
             $message_author = $_SESSION['username'];
 

@@ -4,7 +4,7 @@ require('../actions/db.php');
 
 if (isset($_POST['validate'])) {
     if (!empty($_POST['title'])) {
-        $subjet_title = htmlspecialchars($_POST['title']);
+        $subjet_title = $_POST['title'];
         $subject_date = date('Y-m-d H:i:s');
         $subject_author = $_SESSION['username'];
 

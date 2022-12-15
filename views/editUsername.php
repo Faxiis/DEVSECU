@@ -1,6 +1,6 @@
 <?php
 require('../actions/users/securityAction.php');
-require('../actions/users/showUserProfil.php');
+require('../actions/users/UserProfil.php');
 require('../actions/users/editUsername.php');
 ?>
 <!DOCTYPE html>

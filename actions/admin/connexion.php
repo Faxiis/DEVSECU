@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('actions/db.php');
+require('../actions/db.php');
 
 if (isset($_POST['validate'])) {
     if (!empty($_POST['identifiant']) and !empty($_POST['password'])) {
@@ -25,7 +25,7 @@ if (isset($_POST['validate'])) {
                 $_SESSION['role'] = $userInfos['role'];
                 $_SESSION['inscriptionDate'] = $userInfos['inscriptionDate'];
 
-                header('Location: ./views/home.php');
+                header('Location: admin.php');
             } else {
                 $errorMsg = 'Votre mot de passe est incorrect';
             }

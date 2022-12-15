@@ -30,7 +30,7 @@ require('../actions/subjects/displaySubject.php');
                             <?= $row['createur'] ?>
                         </td>
                         <td><?= $row['date_Creation'] ?></td>
-                        <td><a href="viewMessage.php?id=<?php echo htmlspecialchars($row['Id_sujet']); ?>"><?= $row['libelle'] ?></a></td>
+                        <td><a href="viewMessage.php?id=<?php echo htmlentities($row['Id_sujet']); ?>"><?= $row['libelle'] ?></a></td>
 
                     </tr>
                 <?php endwhile; ?>

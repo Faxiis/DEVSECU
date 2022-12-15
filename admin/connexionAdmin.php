@@ -1,7 +1,7 @@
-<?php require('actions/users/connexionAction.php') ?>
+<?php require('../actions/admin/connexion.php') ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include('includes/Head.php') ?>
+<?php include('../includes/Head.php') ?>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -23,7 +23,7 @@
     </nav>
     <div>
         <!-- zone de connexion -->
-        <h1 class="position-absolute top-4 start-50 translate-middle">Se connecter</h1>
+        <h1 class="position-absolute top-4 start-50 translate-middle">Se connecter en tant qu'administrateur</h1>
         <form method="POST" class="container mt-5 ">
             <?php if (isset($errorMsg)) {
                 echo "<p>$errorMsg.</p>";
@@ -37,10 +37,9 @@
                 <input type="password" class="form-control" required name="password" placeholder="Rentrez votre mot de passe">
             </div>
             <button type="submit" class="btn btn-primary mt-3" name="validate">Connexion</button><br>
-            <a href="./views/register.php">Inscrivez vous !</a>
         </form>
     </div>
- 
+
 </body>
 
 </html>

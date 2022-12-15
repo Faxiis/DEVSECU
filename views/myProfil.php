@@ -29,7 +29,7 @@ require('../actions/users/UserProfil.php');
             </div>
             <div class="card-body">
                 <h4> Pseudonyme : <?= $_SESSION['username'] ?></h4><br>
-                <a href="editUsername.php"><button class="btn btn-dark">Modifier votre pseudonyme</button></a>
+                <a href="./editUsername.php"><button class="btn btn-dark">Modifier votre pseudonyme</button></a>
             </div>
             <div class="card-footer">
                 <p> Rôle : <?= $_SESSION['role'] ?><br>
